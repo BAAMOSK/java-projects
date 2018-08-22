@@ -2,4 +2,5 @@ package teemak;
 
 public interface Coach {
 	public String getDailyWorkout();
+	public String getDailyFortune();
 }

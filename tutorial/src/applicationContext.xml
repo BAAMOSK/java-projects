@@ -9,10 +9,14 @@
 	
     <!-- Define your beans here -->
     
-    <!-- define the dependency -->
+    <!-- define the (dependency => is helper) -->
+    <bean id="myFortune"
+    	class="teemak.HappyFortuneService">
+    </bean>
         
  	<bean id="myCoach"
- 		class="teemak.BaseballCoach">	 		
+ 		class="teemak.TrackCoach">	
+ 		<constructor-arg ref="myFortune" /> 		
  	</bean>
     
 </beans>
