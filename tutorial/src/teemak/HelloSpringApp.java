@@ -8,10 +8,10 @@ public class HelloSpringApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//GET bean from spring -- id from xml file, interface
-		//Coach theCoach = context.getBean("myCoach", Coach.class);
+		Coach theCoach = context.getBean("myCoach", Coach.class);
 		
-		//System.out.println(theCoach.getDailyWorkout());
-		//context.close();
-		System.out.println(context);
+		//CALL methods on the bean
+		System.out.println(theCoach.getDailyWorkout());
+		context.close();
 	}
 }
