@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 /target/
 /.metadata/
+=======
+.metadata/
+.recommenders/
+
+>>>>>>> 1656d899eb361c901d98a4833f0c438e7a9f3048
