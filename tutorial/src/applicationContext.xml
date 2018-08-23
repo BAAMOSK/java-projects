@@ -22,6 +22,8 @@
     <bean id="myCricketCoach"
     	class="teemak.CricketCoach">
     	<property name="fortuneService" ref="myFortune" /> 
+    	<property name="emailAddress" value="bunth667@gmail.com" />
+    	<property name="team" value="Florida Mayhem" />
     </bean>
     
 </beans>
