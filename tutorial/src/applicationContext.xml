@@ -7,6 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 	
+	<context:property-placeholder location="classpath:sport.properties"/>
+	
     <!-- Define your beans here -->
     
     <!-- define the (dependency => is helper) -->
@@ -22,8 +24,9 @@
     <bean id="myCricketCoach"
     	class="teemak.CricketCoach">
     	<property name="fortuneService" ref="myFortune" /> 
-    	<property name="emailAddress" value="bunth667@gmail.com" />
-    	<property name="team" value="Florida Mayhem" />
+    	
+    	<property name="emailAddress" value="${foo.email}" />
+    	<property name="team" value="${foo.team}" />
     </bean>
     
 </beans>
