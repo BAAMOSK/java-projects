@@ -8,11 +8,12 @@ public class AnnotationDemoApp {
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		//GET  bean
-		Coach theCoach = context.getBean("myTennisCoach", Coach.class);
+		//GET  bean -- id must match class name
+		Coach theCoach = context.getBean("tennisCoach", Coach.class);
 		
 		//CALL method on bean
 		System.out.println(theCoach.getDailyWorkout());
+		System.out.println(theCoach.getDailyFortune());
 		
 		//CLOSE context
 		context.close();
