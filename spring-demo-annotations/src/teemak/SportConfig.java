@@ -1,5 +1,6 @@
 package teemak;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 //import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Bean;
 
@@ -7,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 
 @Configuration
 //@ComponentScan("teemak")
+@PropertySource("classpath:sport.properties") //This line now makes properties file data available
 public class SportConfig {
 	//DEFINE bean for sad fortune -- METHOD name is *Bean ID*
 	@Bean
