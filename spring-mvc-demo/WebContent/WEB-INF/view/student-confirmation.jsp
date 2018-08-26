@@ -5,4 +5,5 @@
 
 <body>
 	<h1>Student Confirmed: ${student.firstName} ${student.lastName}</h1>
+	Country: ${student.country}
 </body>
