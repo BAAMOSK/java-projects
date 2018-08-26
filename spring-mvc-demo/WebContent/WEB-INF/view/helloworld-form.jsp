@@ -5,7 +5,7 @@
 
 <body>
 	<h1>FORM</h1>
-	<form action="processFormVersionTwo" method="GET">
+	<form action="processFormVersionThree" method="GET">
 		<label for="studentName">NAME</label>
 		<input type="text" name="studentName" placeholder="e.g. Tee Mak" />
 		<button type="submit">SUBMIT</button>
